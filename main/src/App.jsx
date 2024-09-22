@@ -3,18 +3,28 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/button'
-function App() {
-
+import { FaAlignLeft, FaMoneyBill } from "react-icons/fa";
 /**
- * Challenge: 
+ * Challenge: Add an onClick handler to the Button
+ * component instance (the one on this page). Then
+ * make whatever changes you need for it to actually
+ * work.
  * 
- * Build a Button component in a separate file.
- * (For styling purposes, make sure it renders an HTML <button> element)
- * Your button component should take a `text` prop
+ * Clicking the button should log "Logging in..." 
+ * to the console.
  */
+function logger(){
+  console.log('logging in');
+  
+}
+function App() {
   return (
     <main>
-      <Button text= 'Click here'/>
+      <Button onClick={logger} style={{color:'green'}}>  
+      <FaMoneyBill/>
+         Buy now  
+         </Button>
+
   </main>
   )
 }

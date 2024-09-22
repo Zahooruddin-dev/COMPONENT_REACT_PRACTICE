@@ -1,5 +1,5 @@
-export default function Button(prop){
+export default function Button({...rest}){
   return (
-    <button>{prop.text}</button>
+    <button {...rest}></button>
   )
 }
