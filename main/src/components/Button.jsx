@@ -1,13 +1,19 @@
-export default function Button(props) {
+import classNames from "classnames";
+export default function Button({className, children, size, ...rest }) {
+	let sizeClass =size ? `button-${size}` : "";
 
-	let classNaam;
-
-	if (props.size === 'sm') {
-		console.log('sm');
-		classNaam = 'button-small';
-	} else if (props.size === 'lg') {
-		classNaam = 'button-large';
-	}
-
-	return <button className={classNaam}>{props.children}</button>;
+    /**
+     * Challenge: See if you can fix the problem with the
+     * conflicting `className` props. Doesn't need to be
+     * elegant, just see if you can get the button to be
+     * both large AND with green text
+     */
+    const allClasses= classNames(sizeClass, className)
+    console.log(allClasses);
+    
+	return (
+    <button className={allClasses} {...rest}>
+			{children}
+		</button>
+	);
 }

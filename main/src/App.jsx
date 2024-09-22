@@ -4,13 +4,12 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/button'
 import { FaAlignLeft, FaMoneyBill } from "react-icons/fa";
-
 function App() {
   return (
     <main>
       <Button 
-      style={{color:'green'}}
-      size='sm'
+      size='lg'
+      className="green"
       >  
       <FaMoneyBill/>
          Buy now  
