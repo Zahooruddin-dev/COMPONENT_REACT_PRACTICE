@@ -1,14 +1,27 @@
 import classNames from "classnames";
-export default function Button({className, children, size, ...rest }) {
+export default function Button({variant,className, children, size, ...rest }) {
 	let sizeClass =size ? `button-${size}` : "";
-
+  let variants
+  if(variant ==='success'){
+    variants='success'
+  }
+  if(variant ==='warning'){
+    variants='warning'
+  }
+  if(variant ==='danger'){
+    variants='danger'
+  }
+  console.log(variants);
+  
     /**
-     * Challenge: See if you can fix the problem with the
-     * conflicting `className` props. Doesn't need to be
-     * elegant, just see if you can get the button to be
-     * both large AND with green text
+     * Challenge: 
+     * 
+     * Accept a `variant` prop and style the Button component
+     * accordingly. The values can be `success`, `warning`, or `danger`. 
+     * Check the Figma design for the specific colors to be used for each
+     * variant.
      */
-    const allClasses= classNames(sizeClass, className)
+    const allClasses= classNames(sizeClass, className, variants)
     console.log(allClasses);
     
 	return (

@@ -9,6 +9,7 @@ function App() {
     <main>
       <Button 
       size='lg'
+      variant='warning'
       className="green"
       >  
       <FaMoneyBill/>
