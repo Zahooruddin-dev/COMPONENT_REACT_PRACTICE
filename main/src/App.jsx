@@ -1,8 +1,5 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+
 import './App.css';
-import { FaAlignLeft, FaMoneyBill } from 'react-icons/fa';
 import Menu from './Menu/Menu';
 import MenuButton from './Menu/MenuButton';
 import MenuDropdown from './Menu/MenuDropdown';
