@@ -1,7 +1,9 @@
 import './App.css';
 import Menu from './Menu/Menu';
 import MenuButton from './Menu/MenuButton';
-import MenuDropdown from './Menu/MenuDropdown';/**
+import MenuDropdown from './Menu/MenuDropdown';
+import MenuItem from './Menu/MenuItem';
+/**
   /**
    * 1. MenuDropdown should render children instead of items
    * 2. MenuItem (new component you need to create) should also
@@ -12,13 +14,16 @@ import MenuDropdown from './Menu/MenuDropdown';/**
    *    file and render a MenuItem for each sport in the array
    */
 function App() {
+	const sports = ['Tennis', 'Pickleball', 'Racquetball', 'Squash'];
 	return (
 		<>
 			<Menu>
 				<MenuButton>Sports</MenuButton>
-				<MenuDropdown
-					items={['Tennis', 'Pickleball', 'Racquetball', 'Squash']}
-				></MenuDropdown>
+				<MenuDropdown>
+					{sports.map((sport) => (
+          <MenuItem key={sport}>{sport}</MenuItem>
+        ))}
+				</MenuDropdown>
 			</Menu>
 		</>
 	);
