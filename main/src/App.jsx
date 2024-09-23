@@ -24,14 +24,9 @@ import MenuDropdown from './Menu/MenuDropdown';
 function App() {
 	return (
 		<>
-			<Menu
-				buttonText='Sports'
-				items={['Tennis', 'Pickleball', 'Racquetball', 'Squash']}
-			/>
 			<Menu>
-				<MenuButton></MenuButton>
+				<MenuButton 					buttonText='Sports'></MenuButton>
 				<MenuDropdown
-					buttonText='Sports'
 					items={['Tennis', 'Pickleball', 'Racquetball', 'Squash']}
 				></MenuDropdown>
 			</Menu>
