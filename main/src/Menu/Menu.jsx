@@ -1,5 +1,5 @@
 import React from 'react';
-
+ 
 export const MenuContext = React.createContext();
 
 export default function Menu({ children }) {
@@ -11,7 +11,7 @@ export default function Menu({ children }) {
 		setOpen((prevOpen) => !prevOpen);
 	}
 	return (
-		<MenuContext.Provider value={false}>
+		<MenuContext.Provider value={true}>
 			<div className='menu'>{children}</div>
 		</MenuContext.Provider>
 	);
