@@ -1,6 +1,4 @@
 import React from 'react';
-import MenuButton from './MenuButton';
-import MenuDropdown from './MenuDropdown';
 
 export default function Menu({ children }) {
   const [open, setOpen] = React.useState(true)
@@ -11,7 +9,9 @@ export default function Menu({ children }) {
 
   return (
       <div className="menu">
-          {children}
+          {React.Children.map(children,(child)=>{
+
+          })}
       </div>
   )
 }
