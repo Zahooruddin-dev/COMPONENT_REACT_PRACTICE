@@ -1,8 +1,8 @@
 import React from 'react';
 
 export default function MenuDropdown({ children, open }) {
-	return(
+	return open ?(
  <div className='menu-dropdown'>
       {children}
-      </div>);
+      </div>):null
 }
