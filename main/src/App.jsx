@@ -8,7 +8,6 @@ function App() {
 		<>
 		<Star></Star>
 			<br />
-			<Toggle>
 				<Menu>
 					<Toggle.Button>
 						<Menu.Button>Menu</Menu.Button>
@@ -22,7 +21,6 @@ function App() {
 						</Menu.Dropdown>
 					</Toggle.On>
 				</Menu>
-			</Toggle>
 		</>
 	);
 }
