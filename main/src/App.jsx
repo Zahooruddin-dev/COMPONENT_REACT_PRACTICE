@@ -3,18 +3,10 @@ import './App.css';
 import Toggle from './components/Toggle/index';
 import { BsStar, BsStarFill } from "react-icons/bs"
 import Menu from './components/Menu/index';
+import MenuButton from './components/Menu/MenuButton';
+import MenuDropdown from './components/Menu/MenuDropdown';
 function App() {
-	  /**
-   * Challenge: Refactor the Menu components to use the logic 
-   * from Toggle instead of doing any logic of its own.
-   * 
-   * 1. Remove all context and state logic from the menu components
-   * 2. Using Toggle and its "sub-components", add a menu to this
-   *    App component below the Star. Make sure to use a separate
-   *    <Toggle> wrapper so the state isn't tied to the Star's 
-   *    Toggle state
-   */
-  
+
 	return (
 		<>
 			<Toggle>
@@ -27,8 +19,17 @@ function App() {
 				</Toggle.Off>
 				</Toggle.Button>
 			</Toggle>
-			      {/* Your Menu code goes here */}
-		<Menu></Menu>
+			<Menu>
+				<Menu.Button>		Menu		</Menu.Button>
+
+				<Menu.Dropdown>
+					<Menu.Item>F1</Menu.Item>
+					<Menu.Item>F2</Menu.Item>
+					<Menu.Item>F3</Menu.Item>
+					<Menu.Item>F4</Menu.Item>
+
+				</Menu.Dropdown>
+			</Menu>
 		</>
 	);
 }
