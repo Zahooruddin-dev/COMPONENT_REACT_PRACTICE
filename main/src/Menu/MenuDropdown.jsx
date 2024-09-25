@@ -1,5 +1,5 @@
 import React from 'react';
-import Toggle from "../Toggle/index"
+import Toggle from "../Toggle/Toggle"
 
 export default function MenuDropdown({ children }) {
     return (

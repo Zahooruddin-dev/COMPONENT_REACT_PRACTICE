@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "../Button/Button"
-import Toggle from "../Toggle/index"
+import Toggle from "../Toggle/Toggle"
 
 export default function MenuButton({ children }) {
     return (
