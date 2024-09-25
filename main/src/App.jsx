@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Toggle from './components/Toggle/index';
 import { BsStar, BsStarFill } from "react-icons/bs"
-
+import Menu from './components/Menu/index';
 function App() {
 	  /**
    * Challenge: Refactor the Menu components to use the logic 
@@ -28,7 +28,7 @@ function App() {
 				</Toggle.Button>
 			</Toggle>
 			      {/* Your Menu code goes here */}
-
+		<Menu></Menu>
 		</>
 	);
 }
