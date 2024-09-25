@@ -19,17 +19,23 @@ function App() {
 				</Toggle.Off>
 				</Toggle.Button>
 			</Toggle>
+			<Toggle>
 			<Menu>
-				<Menu.Button>		Menu		</Menu.Button>
-
+			<Toggle.Button>
+			<Menu.Button>Menu</Menu.Button>
+			</Toggle.Button>
+			<Toggle.On>
 				<Menu.Dropdown>
-					<Menu.Item>F1</Menu.Item>
-					<Menu.Item>F2</Menu.Item>
-					<Menu.Item>F3</Menu.Item>
-					<Menu.Item>F4</Menu.Item>
-
+					<Menu.Item>Home</Menu.Item>
+					<Menu.Item>About</Menu.Item>
+					<Menu.Item>Resume</Menu.Item>
+					<Menu.Item>Project</Menu.Item>
 				</Menu.Dropdown>
+				</Toggle.On>
+
 			</Menu>
+			</Toggle>
+
 		</>
 	);
 }
