@@ -3,7 +3,7 @@ import React from 'react';
 const ToggleContext = React.createContext();
 
 export default function Toggle({ children }) {
-	const [on, setOn] = React.useState(false);
+	const [on, setOn] = React.useState(true);
 
 	function toggle() {
 		setOn((prevOn) => !prevOn);
