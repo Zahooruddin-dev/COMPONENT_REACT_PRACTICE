@@ -9,7 +9,7 @@ export default function Toggle({ children, onToggle }) {
 		console.log('Toggled');
 	}
 	React.useEffect(() => {
-		onToggle()
+		onToggle
 }, [on])
 
 	return (

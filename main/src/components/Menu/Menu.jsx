@@ -1,6 +1,6 @@
 import React from 'react';
 import Toggle from '../Toggle/index';
-export default function Menu({ children }) {
+export default function Menu({ children,onOpen }) {
 	    /**
      * Challenge:
      * 1. Accept `onOpen` as a prop for the Menu component
@@ -10,7 +10,7 @@ export default function Menu({ children }) {
      *    Just use console.log() for now.
      */
 	return (
-        <Toggle>
+        <Toggle onToggle={onOpen}>
 			<div className='menu'>{children}</div>
             
             </Toggle>

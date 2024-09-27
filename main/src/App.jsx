@@ -15,7 +15,7 @@ function App() {
 			<Star onChange={()=>console.log('hey')
 			}></Star>
 			<br />
-			<Menu>
+			<Menu onOpen={()=>console.log('hey')}>
 				<Menu.Button>Menu</Menu.Button>
 
 				<Menu.Dropdown>
