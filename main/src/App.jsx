@@ -3,12 +3,7 @@ import './App.css';
 import Menu from './components/Menu/index';
 import Star from './components/star';
 function App() {
-	/**
-	 * Challenge:
-	 * Move other Toggle logic to be composed with the Menu
-	 * components internally, so the person using our Menu
-	 * component never needs to touch the generic Toggle at all.
-	 */
+
 
 	return (
 		<>
