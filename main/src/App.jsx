@@ -12,10 +12,9 @@ function App() {
 
 	return (
 		<>
-			<Star onChange={()=>console.log('hey')
-			}></Star>
+			<Star onChange={() => console.log('hey')}/>
 			<br />
-			<Menu onOpen={()=>console.log('hey')}>
+			<Menu onOpen={() => console.log('hey')}>
 				<Menu.Button>Menu</Menu.Button>
 
 				<Menu.Dropdown>
