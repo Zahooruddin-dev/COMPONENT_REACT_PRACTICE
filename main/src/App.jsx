@@ -7,9 +7,9 @@ function App() {
 
 	return (
 		<>
-			<Star onChange={() => console.log('hey')}/>
+			<Star onChange={() => {}}/>
 			<br />
-			<Menu onOpen={() => console.log('hey')}>
+			<Menu onOpen={() => console.log('toggle')}>
 				<Menu.Button>Menu</Menu.Button>
 
 				<Menu.Dropdown>
