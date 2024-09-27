@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Toggle from './components/Toggle/index';
 import Menu from './components/Menu/index';
 import Star from './components/star';
 function App() {
@@ -13,7 +12,8 @@ function App() {
 
 	return (
 		<>
-			<Star></Star>
+			<Star onChange={()=>console.log('hey')
+			}></Star>
 			<br />
 			<Menu>
 				<Menu.Button>Menu</Menu.Button>
