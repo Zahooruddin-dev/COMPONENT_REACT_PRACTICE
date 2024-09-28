@@ -1,5 +1,4 @@
 import React from 'react';
-import Toggle from './Toggle/index';
 import { BsStar, BsStarFill } from 'react-icons/bs';
 import useToggle from './hooks/useToggle';
 export default function Star({ onChange }) {
