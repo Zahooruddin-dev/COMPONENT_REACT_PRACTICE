@@ -1,13 +1,11 @@
 import React from 'react';
-import Toggle from '../Toggle/index';
+import useToggle from '../hooks/useToggle';
 export default function Menu({ children,onOpen }) {
 	    
-     
+     const [on,toggle]=useToggle()
 	return (
-        <Toggle onToggle={onOpen}>
 			<div className='menu'>{children}</div>
             
-            </Toggle>
             
 	);
 }
