@@ -7,7 +7,7 @@ function App() {
 		<>
 {/* 			<Star onChange={() => {}} />
  */}			<br />
-			<Menu onOpen={() => console.log('toggle')}>
+			<Menu onOpen={() => console.log("Opened/closed")}>
 				<Menu.Button>Menu</Menu.Button>
 
 				<Menu.Dropdown>
