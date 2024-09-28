@@ -6,7 +6,7 @@ function App() {
 	return (
 		<>
 			<Star onChange={() => {}} />
-			<br />
+			{/* <br />
 			<Menu onOpen={() => console.log('toggle')}>
 				<Menu.Button>Menu</Menu.Button>
 
@@ -16,7 +16,7 @@ function App() {
 					<Menu.Item>Resume</Menu.Item>
 					<Menu.Item>Project</Menu.Item>
 				</Menu.Dropdown>
-			</Menu>
+			</Menu> */}
 		</>
 	);
 }
