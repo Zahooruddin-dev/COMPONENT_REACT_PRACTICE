@@ -1,14 +1,11 @@
 import React from 'react';
 import useEffectOnUpdate from '../hooks/useEffectOnUpdate';
+import useToggle from '../hooks/useToggle';
 const ToggleContext = React.createContext();
 export default function Toggle({ children, onToggle }) {
-	const [on, setOn] = React.useState(true);
-	const firstRender = React.useRef(true);
+	const [on, toggle] = useToggle()
 
-	function toggle() {
-		setOn((prevOn) => !prevOn);
-		console.log('Toggled');
-	}
+
 
 	useEffectOnUpdate(onToggle, [on])
 
